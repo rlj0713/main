@@ -8,8 +8,9 @@ for (let i = 0; i < 36; i++) {
 }
 
 function fibonacci(i) {
-    let a = ((1 + Math.sqrt(5)) / 2);
-    let b = ((1 - Math.sqrt(5)) / 2);
-    return Math.round(1 / Math.sqrt(5) * ((a ** i) - (b ** i)))
+    x = Math.sqrt(5); // reuse sqrt value later
+    let a = ((1 + x) / 2);
+    let b = ((1 - x) / 2);
+    return Math.round(1 / x * ((a ** i) - (b ** i)))
 }
 
