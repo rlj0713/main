@@ -1,6 +1,10 @@
 
-for (let i = 0; i < 40; i++) {
-    console.log(fibonacci(i));
+let sum = 0;
+
+for (let i = 0; i < 36; i++) {
+    if (fibonacci(i) % 2 == 0)
+        sum += fibonacci(i);
+        console.log(fibonacci(i), sum);
 }
 
 function fibonacci(i) {
@@ -8,3 +12,4 @@ function fibonacci(i) {
     let b = ((1 - Math.sqrt(5)) / 2);
     return Math.round(1 / Math.sqrt(5) * ((a ** i) - (b ** i)))
 }
+
