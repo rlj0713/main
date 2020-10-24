@@ -8,7 +8,7 @@ function isComposite(a) {
     }
 }
 
-// Print all Primes between 2 limits
+// Print all Primes between 2 numbers
 function printPrimes(low, high) {
     for (let i = low; i < high; i++) {
         if (isComposite(i) !== true)
@@ -16,5 +16,5 @@ function printPrimes(low, high) {
     }
 }
 
-printPrimes(2, 10);
+printPrimes(2, 100);
 
